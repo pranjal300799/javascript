@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>javascript test page</title>
+</head>
+<body>
+    <script>
+       //task 1 write a function add7 that ask for a no. and adds 7 to it and print it
+       function add7(number)
+        {
+           number+=7;
+           return number;
+        }
+        console.log(add7(+(prompt("enter a no."))));
+        // task 2 write a function that takes two numbers and returns the product
+        let multiply=(a,b)=>a*b;
+        console.log(multiply(+prompt("enter no 1"),+prompt("enter no 2")));
+        //task 3 write a function capitalize that takes a string and returns the string with only 1st letter as capital
+        function capitalize(word)
+        { word=word.toLowerCase();
+          let firstLetter=word.charAt(0);  console.log("Prabhakar".slice(1,-1))
+          firstLetter=firstLetter.toUpperCase();
+          return(
+            firstLetter+word.substr(1)
+          );
+        }
+        console.log(capitalize(prompt("enter a word")));
+        //task 4 write a funciton called last letter
+        function lastLetter(word)
+        {
+            return word.charAt(word.length-1);
+        }
+        console.log(lastLetter(prompt("enter a word")));
+        
+    </script>
+</body>
+</html>
